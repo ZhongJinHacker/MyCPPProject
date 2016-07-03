@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		504969BC1D2816CA00E81D80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 504969BB1D2816CA00E81D80 /* main.cpp */; };
+		505BE8841D28AE7F005202C2 /* Productor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 505BE8831D28AE7F005202C2 /* Productor.cpp */; };
+		505BE8871D28B206005202C2 /* Consumer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 505BE8861D28B206005202C2 /* Consumer.cpp */; };
+		505BE88A1D28B480005202C2 /* Storehouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 505BE8881D28B480005202C2 /* Storehouse.cpp */; };
+		505BE88D1D28BCFF005202C2 /* Good.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 505BE88B1D28BCFF005202C2 /* Good.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		504969B81D2816CA00E81D80 /* ThreadsProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ThreadsProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		504969BB1D2816CA00E81D80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		505BE8821D28ADA4005202C2 /* Productor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Productor.h; sourceTree = "<group>"; };
+		505BE8831D28AE7F005202C2 /* Productor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Productor.cpp; sourceTree = "<group>"; };
+		505BE8851D28B024005202C2 /* Consumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consumer.h; sourceTree = "<group>"; };
+		505BE8861D28B206005202C2 /* Consumer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Consumer.cpp; sourceTree = "<group>"; };
+		505BE8881D28B480005202C2 /* Storehouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Storehouse.cpp; sourceTree = "<group>"; };
+		505BE8891D28B480005202C2 /* Storehouse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Storehouse.hpp; sourceTree = "<group>"; };
+		505BE88B1D28BCFF005202C2 /* Good.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Good.cpp; sourceTree = "<group>"; };
+		505BE88C1D28BCFF005202C2 /* Good.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Good.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,25 @@
 		504969BA1D2816CA00E81D80 /* ThreadsProject */ = {
 			isa = PBXGroup;
 			children = (
+				505BE8811D28AD5E005202C2 /* include */,
 				504969BB1D2816CA00E81D80 /* main.cpp */,
+				505BE8831D28AE7F005202C2 /* Productor.cpp */,
+				505BE8861D28B206005202C2 /* Consumer.cpp */,
+				505BE8881D28B480005202C2 /* Storehouse.cpp */,
+				505BE88B1D28BCFF005202C2 /* Good.cpp */,
 			);
 			path = ThreadsProject;
+			sourceTree = "<group>";
+		};
+		505BE8811D28AD5E005202C2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				505BE8851D28B024005202C2 /* Consumer.h */,
+				505BE8821D28ADA4005202C2 /* Productor.h */,
+				505BE8891D28B480005202C2 /* Storehouse.hpp */,
+				505BE88C1D28BCFF005202C2 /* Good.hpp */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505BE88A1D28B480005202C2 /* Storehouse.cpp in Sources */,
+				505BE8841D28AE7F005202C2 /* Productor.cpp in Sources */,
 				504969BC1D2816CA00E81D80 /* main.cpp in Sources */,
+				505BE8871D28B206005202C2 /* Consumer.cpp in Sources */,
+				505BE88D1D28BCFF005202C2 /* Good.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +271,7 @@
 				504969C11D2816CA00E81D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

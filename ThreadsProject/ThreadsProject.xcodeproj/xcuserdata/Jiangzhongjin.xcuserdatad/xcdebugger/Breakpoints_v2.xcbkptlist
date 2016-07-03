@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ThreadsProject/Consumer.cpp"
+            timestampString = "489224555.223386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "Consumer::Consumer(Storehouse &amp;store)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Consumer::Consumer(Storehouse&amp;)"
+                  moduleName = "ThreadsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jiangzhongjin/Documents/CodeDir/gitDir/MyCPPProject/ThreadsProject/ThreadsProject/Consumer.cpp"
+                  timestampString = "489225732.783617"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Consumer::Consumer(Storehouse&amp;)"
+                  moduleName = "ThreadsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jiangzhongjin/Documents/CodeDir/gitDir/MyCPPProject/ThreadsProject/ThreadsProject/Consumer.cpp"
+                  timestampString = "489225732.783767"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
