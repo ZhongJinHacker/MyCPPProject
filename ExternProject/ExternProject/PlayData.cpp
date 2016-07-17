@@ -53,9 +53,19 @@ void downloadManager::dmDownloadIPlayDataTwo()
 downloadManager::iPlayData *downloadManager::dmCreatePlayData()
 {
     std::cout << "downloadManager : dmCreatePlayData : CPlayData"<< std::endl;
-    CPlayData *playData = new CPlayData;    
+    CPlayData *playData = new CPlayData;
+    //std::shared_ptr<CPlayData> playData = std::make_shared<CPlayData>();
     return playData;
 }
 
+std::shared_ptr<downloadManager::iPlayData> downloadManager::dmCreateSmartPlayData()
+{
+    std::cout << "downloadManager : dmCreateSmartPlayData : CPlayData"<< std::endl;
+    //CPlayData *playData = new CPlayData;
+    //std::shared_ptr<downloadManager::iPlayData> smartPlayData(playData);
+    //或 以下方式可以，说明在 share_ptr 模板类中会进行隐式转换，不需要强转
+    std::shared_ptr<downloadManager::iPlayData> smartPlayData(new CPlayData);
+    return smartPlayData;
+}
 
 

@@ -9,6 +9,7 @@
 #include <iostream>
 #include "DownloadManager.hpp"
 #include "PlayData.hpp"
+#include <memory>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -39,6 +40,11 @@ int main(int argc, const char * argv[]) {
     play->printPlayDataTwo();
     
     delete play;
+    
+    std::shared_ptr<downloadManager::iPlayData> smartPlay =
+            downloadManager::dmCreateSmartPlayData();
+    
+    smartPlay->printPlayDataTwo();
     
     return 0;
 }

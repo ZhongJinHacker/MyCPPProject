@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <memory>
 
 namespace downloadManager {
 
@@ -30,7 +31,7 @@ namespace downloadManager {
         //此处可以定义函数（如下），或声明为纯虚函数，否则如果仅仅是声明，编译会报找不到定义错误
         virtual void printPlayData()
         {
-            
+            std::cout << " iPlayData : printPlayDataTwo" << std::endl;
         }
     
         virtual void printPlayDataTwo()
@@ -45,5 +46,7 @@ namespace downloadManager {
     //说明编译器默认增加extern，加不加一样
     
     extern iPlayData *dmCreatePlayData();
+    
+    extern std::shared_ptr<iPlayData> dmCreateSmartPlayData();
 }
 #endif /* PlayData_hpp */
