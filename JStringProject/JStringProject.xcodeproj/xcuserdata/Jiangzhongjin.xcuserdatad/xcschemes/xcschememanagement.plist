@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>JStringProjectTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>508DCC991D3B78D300AE5414</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50C1ADF91D5067C000BDE96C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

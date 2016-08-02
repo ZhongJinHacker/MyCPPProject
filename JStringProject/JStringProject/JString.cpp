@@ -194,7 +194,7 @@ JString &JString::subString(int position, int len)
     {
         data[i] = data[position + i];
     }
-    data[length + 1] = '\0';
+    data[length] = '\0';
     
     return *this;
 }

@@ -21,7 +21,7 @@ namespace grady {
         
         //带参构造函数
         JString(const char *str);
-        
+                
         ~JString();
         
         //拷贝构造

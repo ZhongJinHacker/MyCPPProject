@@ -9,10 +9,24 @@
 /* Begin PBXBuildFile section */
 		508DCC9E1D3B78D300AE5414 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 508DCC9D1D3B78D300AE5414 /* main.cpp */; };
 		508DCCA61D3B791900AE5414 /* JString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 508DCCA41D3B791900AE5414 /* JString.cpp */; };
+		50C1ADFD1D5067C000BDE96C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C1ADFC1D5067C000BDE96C /* main.cpp */; };
+		50C1AE041D506AD800BDE96C /* JString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 508DCCA41D3B791900AE5414 /* JString.cpp */; };
+		50C1AE1C1D50933400BDE96C /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1AE1A1D50925700BDE96C /* libgtest_main.a */; };
+		50C1AE1D1D50933400BDE96C /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1AE181D50924C00BDE96C /* libgtest.a */; };
+		50C1AE201D509BB000BDE96C /* JStringTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C1AE1F1D509BB000BDE96C /* JStringTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		508DCC981D3B78D300AE5414 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		50C1ADF81D5067C000BDE96C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -28,6 +42,11 @@
 		508DCC9D1D3B78D300AE5414 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		508DCCA41D3B791900AE5414 /* JString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JString.cpp; sourceTree = "<group>"; };
 		508DCCA51D3B791900AE5414 /* JString.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JString.hpp; sourceTree = "<group>"; };
+		50C1ADFA1D5067C000BDE96C /* JStringProjectTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JStringProjectTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C1ADFC1D5067C000BDE96C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		50C1AE181D50924C00BDE96C /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest.a; sourceTree = "<group>"; };
+		50C1AE1A1D50925700BDE96C /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest_main.a; sourceTree = "<group>"; };
+		50C1AE1F1D509BB000BDE96C /* JStringTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JStringTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +57,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50C1ADF71D5067C000BDE96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C1AE1C1D50933400BDE96C /* libgtest_main.a in Frameworks */,
+				50C1AE1D1D50933400BDE96C /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		508DCC911D3B78D300AE5414 = {
 			isa = PBXGroup;
 			children = (
+				50C1AE171D50921000BDE96C /* libs */,
 				508DCC9C1D3B78D300AE5414 /* JStringProject */,
+				50C1ADFB1D5067C000BDE96C /* JStringProjectTest */,
 				508DCC9B1D3B78D300AE5414 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				508DCC9A1D3B78D300AE5414 /* JStringProject */,
+				50C1ADFA1D5067C000BDE96C /* JStringProjectTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +96,24 @@
 				508DCCA51D3B791900AE5414 /* JString.hpp */,
 			);
 			path = JStringProject;
+			sourceTree = "<group>";
+		};
+		50C1ADFB1D5067C000BDE96C /* JStringProjectTest */ = {
+			isa = PBXGroup;
+			children = (
+				50C1ADFC1D5067C000BDE96C /* main.cpp */,
+				50C1AE1F1D509BB000BDE96C /* JStringTest.cpp */,
+			);
+			path = JStringProjectTest;
+			sourceTree = "<group>";
+		};
+		50C1AE171D50921000BDE96C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				50C1AE1A1D50925700BDE96C /* libgtest_main.a */,
+				50C1AE181D50924C00BDE96C /* libgtest.a */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +136,23 @@
 			productReference = 508DCC9A1D3B78D300AE5414 /* JStringProject */;
 			productType = "com.apple.product-type.tool";
 		};
+		50C1ADF91D5067C000BDE96C /* JStringProjectTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C1AE001D5067C000BDE96C /* Build configuration list for PBXNativeTarget "JStringProjectTest" */;
+			buildPhases = (
+				50C1ADF61D5067C000BDE96C /* Sources */,
+				50C1ADF71D5067C000BDE96C /* Frameworks */,
+				50C1ADF81D5067C000BDE96C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JStringProjectTest;
+			productName = JStringProjectTest;
+			productReference = 50C1ADFA1D5067C000BDE96C /* JStringProjectTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +163,9 @@
 				ORGANIZATIONNAME = JiangZhongjin;
 				TargetAttributes = {
 					508DCC991D3B78D300AE5414 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					50C1ADF91D5067C000BDE96C = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -114,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				508DCC991D3B78D300AE5414 /* JStringProject */,
+				50C1ADF91D5067C000BDE96C /* JStringProjectTest */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +195,16 @@
 			files = (
 				508DCC9E1D3B78D300AE5414 /* main.cpp in Sources */,
 				508DCCA61D3B791900AE5414 /* JString.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C1ADF61D5067C000BDE96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C1AE201D509BB000BDE96C /* JStringTest.cpp in Sources */,
+				50C1AE041D506AD800BDE96C /* JString.cpp in Sources */,
+				50C1ADFD1D5067C000BDE96C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +306,32 @@
 			};
 			name = Release;
 		};
+		50C1ADFE1D5067C000BDE96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				HEADER_SEARCH_PATHS = "/Users/Jiangzhongjin/Documents/CodeDir/gtest-1.7.0/include";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Jiangzhongjin/Documents/CodeDir/gitDir/MyCPPProject/JStringProject/,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50C1ADFF1D5067C000BDE96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				HEADER_SEARCH_PATHS = "/Users/Jiangzhongjin/Documents/CodeDir/gtest-1.7.0/include";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Jiangzhongjin/Documents/CodeDir/gitDir/MyCPPProject/JStringProject/,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -245,6 +351,16 @@
 				508DCCA31D3B78D300AE5414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C1AE001D5067C000BDE96C /* Build configuration list for PBXNativeTarget "JStringProjectTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C1ADFE1D5067C000BDE96C /* Debug */,
+				50C1ADFF1D5067C000BDE96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,5 +20,10 @@ int main(int argc, const char * argv[]) {
     JString str3 = str + str2;
     
     std::cout << str3 << std::endl;
+    
+    JString str4 = "hello grady";
+    
+    std::cout << str4 << std::endl;
+    
     return 0;
 }
