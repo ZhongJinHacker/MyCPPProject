@@ -31,10 +31,11 @@ TEST(JtringTest, test2)
 {
     JString str("hello world");
     
-    str.subString(4, 6);
-    std::cout << str << std::endl;
+    JString str1 = str.subString(4, 6);
+    std::cout << str << str1 << std::endl;
     JString strFinnal = "o worl";
-    ASSERT_EQ(str, strFinnal);
+    std::cout <<  str1 << std::endl;
+    ASSERT_EQ(str1, strFinnal);
 }
 
 TEST(JtringTest, testLeng)

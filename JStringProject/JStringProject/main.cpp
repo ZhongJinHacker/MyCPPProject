@@ -25,5 +25,14 @@ int main(int argc, const char * argv[]) {
     
     std::cout << str4 << std::endl;
     
+    JString str5 = str4.subString(0, 3);
+    
+    std::cout << str4 << std::endl;
+    
+    std::cout << str5 << std::endl;
+    
+    char *tmp;
+    delete tmp;
+
     return 0;
 }

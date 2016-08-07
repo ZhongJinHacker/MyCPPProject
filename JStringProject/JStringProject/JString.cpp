@@ -41,7 +41,7 @@ JString::JString(const JString &obj)
         return;
     }
     
-    delete [] data;
+    //delete  data; 这里这么写是错误的
     //这么写看似可以，其实有一个隐患，就是obj析构以后会导致本对象的data成为野指针
     //data = obj.data;
     data = new char[obj.length + 1];
@@ -179,24 +179,42 @@ int JString::leng() const
     return length;
 }
 
-JString &JString::subString(int position, int len)
+JString JString::subString(int position, int len)
 {
+
+//    if (position < 0 || len < 0 || position + len > length)
+//    {
+//        delete data;
+//        data   = new char[1];
+//        length = 0;
+//        return *this;
+//    }
+//    
+//    length = len;
+//    for (int i = 0; i < length; i++)
+//    {
+//        data[i] = data[position + i];
+//    }
+//    data[length] = '\0';
+//    
+//    return *this;
+
     if (position < 0 || len < 0 || position + len > length)
     {
-        delete data;
-        data   = new char[1];
-        length = 0;
-        return *this;
+        return NULL;
     }
     
-    length = len;
-    for (int i = 0; i < length; i++)
+    JString tmp;
+    tmp.data = new char[len + 1];
+    tmp.length = len;
+    
+    for (int i = 0; i < len; i++)
     {
-        data[i] = data[position + i];
+        tmp.data[i] = data[position + i];
     }
-    data[length] = '\0';
-    
-    return *this;
+    tmp.data[len] = '\0';
+    return tmp;
+
 }
 
 void JString::UpperCase()

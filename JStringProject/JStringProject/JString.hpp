@@ -46,7 +46,7 @@ namespace grady {
         //返回字符串长度
         int leng()const;
         //取从position所指位置连续取len个字符组成子串返回
-        JString &subString(int position,int len);
+        JString subString(int position,int len);
         
         void UpperCase();
         void LowerCase();
