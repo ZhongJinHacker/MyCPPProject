@@ -41,7 +41,7 @@ JString::JString(const JString &obj)
         return;
     }
     
-    //delete  data; 这里这么写是错误的
+    //delete  data; 这里这么写是错误的,网上说是多次Delete导致，但debug发现不是，猜测是编译器不允许在类中delete还未分配内存的“成员指针”！
     //这么写看似可以，其实有一个隐患，就是obj析构以后会导致本对象的data成为野指针
     //data = obj.data;
     data = new char[obj.length + 1];
